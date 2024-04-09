@@ -29,50 +29,85 @@
 
 article{
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   display: grid;
   margin: auto;
   background-color: blue;
 }
 
 .tarjeta{
+  box-sizing: border-box;
   height: 550px;
   width: 300px;
   border-radius: 14px;
-  box-shadow: 0px 0px 20px 0px gray;
-
-
-    & .container{
-      display: grid;
-      place-items: center;
-      height: 100%;
-      height: 100%;
-      background: var(--normal)
-    }
+  box-shadow: 0px 0px 20px 0px gray;  
 
     & .Hencabezado{
-      height: 50px;
-      width: 100%;
-      background-color: red;
-    }
-
+        height: 50px;
+        width: 100%;
+        background-color: gray;
+      }
+      
     & .producto{
-      height: 225px;
-      width: 100%;
-      background-color: gold;
-    }
+        height: 220px;
+        width: 100%;
+        background-color:rgb(116, 107, 107);
 
+        & .colores{
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          height: 40px;
+          width: 100%;
+        }
+        & .productox{
+          font-size: large;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 65px;
+          width: 100%;
+        }
+        & .precio{
+          font-size: large;
+          display: flex;
+          justify-content: center;
+          height: 60px;
+          width: 100%;
+        }
+        & .talles{
+          display: flex;
+          justify-content: center;
+          height: 55px;
+          width: 100%;
+        }
+      
+      }
+      
     & .descripcion{
-      height: 225px;
-      width: 100%;
-      background-color: violet;
-    }
+        height: 195px;
+        width: 100%;
+        background-color: gray;
 
+        & .txt{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 150px;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 20px;
+        }
+      }
+      
     & .carrito{
-      height: 50px;
-      width: 100%;
-      background-color: palegreen;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+        width: 100%;
+        background-color: white;
+      }
 }
 
 body{
@@ -85,4 +120,14 @@ body{
   color: black;
   font-size: 20pt;
 }
+
+
+.container{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  height: 100%;
+  background: var(--normal)
+}
+
 
